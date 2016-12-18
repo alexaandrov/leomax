@@ -113,6 +113,7 @@ h1 {
     font-weight: 300;
     line-height: 1em;
     color: #4DC3FA;
+    margin-bottom: 35px;
 }
 
 th {
@@ -235,6 +236,11 @@ hr {
 .error p {
     padding: 15px;
     color: #FB667A;
+}
+
+.tasks {
+    text-align: center;
+    margin: 0 25%;
 }
 
 @media (max-width: 800px) {

@@ -2,12 +2,14 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Test';
+$this->title = 'Leomax Tests';
 ?>
 <div class="site-index">
+    <h1>#Leomax<span class="yellow">Tasks</span></h1>
+    <h2>Created with love by <a href="http://willapp.ru" target="_blank">Greg</a></h2>
 
     <div class="jumbotron">
-        <h1>Welcome!</h1>
+        <h3>Welcome!</h3>
 
         <p class="lead">You have successfully install Yii-powered application.</p>
 

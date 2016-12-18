@@ -36,7 +36,9 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']]
+            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'All Tasks', 'url' => ['/task']],
+            ['label' => 'Task 1', 'url' => ['/task/1']],
         ],
     ]);
     NavBar::end();

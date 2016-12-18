@@ -8,7 +8,7 @@ $this->title = 'Task 1';
 <h1><?= $this->title ?></h1>
 
 
-<table class="table-container">
+<table id="sorted" class="table-container">
     <thead>
     <tr>
         <th>№</th>

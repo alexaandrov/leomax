@@ -8,7 +8,7 @@ $this->title = 'Task 2';
 <h1><?= $this->title ?></h1>
 
 
-<table class="table-container">
+<table id="sorted" class="table-container">
     <thead>
     <tr>
         <th>Order ID</th>
@@ -20,26 +20,26 @@ $this->title = 'Task 2';
     <tbody>
     <?php foreach ($sql as $item): ?>
         <tr>
-            <td><?= $item['order_id'] ?></td>
-            <td><?= $item['amount'] ?></td>
-            <td><?= $item['delivery_amount'] ?></td>
-            <td><?= $item['total_amount'] ?></td>
+            <td><?= (int)$item['order_id'] ?></td>
+            <td><?= (float)$item['amount'] ?></td>
+            <td><?= (float)$item['delivery_amount'] ?></td>
+            <td><?= (float)$item['total_amount'] ?></td>
         </tr>
     <?php endforeach; ?>
     <?php foreach ($json as $item): ?>
         <tr>
-            <td><?= $item['orderid'] ?></td>
-            <td><?= $item['amount'] ?></td>
-            <td><?= $item['delivery']['totalamount'] ?></td>
-            <td><?= $item['totalamount'] ?></td>
+            <td><?= (int)$item['orderid'] ?></td>
+            <td><?= (float)$item['amount'] ?></td>
+            <td><?= (float)$item['delivery']['totalamount'] ?></td>
+            <td><?= (float)$item['totalamount'] ?></td>
         </tr>
     <?php endforeach; ?>
     <?php foreach ($xml as $item): ?>
         <tr>
-            <td><?= $item['ID'] ?></td>
-            <td><?= $item['OrderAmount'] ?></td>
-            <td><?= $item['CourierDeliveryPrice'] ?></td>
-            <td><?= $item['TotalOrderAmount'] ?></td>
+            <td><?= (int)$item['ID'] ?></td>
+            <td><?= (float)$item['OrderAmount'] ?></td>
+            <td><?= (float)$item['CourierDeliveryPrice'] ?></td>
+            <td><?= (float)$item['TotalOrderAmount'] ?></td>
         </tr>
     <?php endforeach; ?>
     </tbody>

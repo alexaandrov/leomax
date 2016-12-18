@@ -254,6 +254,22 @@ hr {
     color: white;
 }
 
+.sortAsc, .sortDesc {
+    cursor: pointer;
+}
+
+.sortAsc {
+    padding-left: 5px;
+}
+
+.sortAsc:hover {
+    color: #FFF842;
+}
+
+.sortDesc:hover {
+    color: #FFF842;
+}
+
 @media (max-width: 800px) {
     .table-container td:nth-child(4),
     .table-container th:nth-child(4) {

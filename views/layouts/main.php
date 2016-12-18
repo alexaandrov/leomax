@@ -50,9 +50,9 @@ AppAsset::register($this);
     </div>
 </div>
 
-<footer class="footer">
+<footer>
     <div class="container">
-        <p class="pull-left"><i class="fa fa-terminal" aria-hidden="true"></i></p>
+        <p class="pull-left"></p>
 
         <p class="pull-right">Create by <a href="http://willapp.ru"><i class="fa fa-hand-peace-o" aria-hidden="true"></i> Greg</a></p>
     </div>

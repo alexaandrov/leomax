@@ -2,6 +2,7 @@
 /* @var $this yii\web\View */
 
 $this->title = 'All Tasks';
+
 ?>
 
 <div class="container">

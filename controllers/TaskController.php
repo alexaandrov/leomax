@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Task;
+use app\models\TmpOrderAmount;
 
 class TaskController extends \yii\web\Controller
 {
@@ -20,4 +21,12 @@ class TaskController extends \yii\web\Controller
         ]);
     }
 
+    public function action2()
+    {
+        $data = TmpOrderAmount::find()
+            ->all();
+        return $this->render('2', [
+            'data' => $data
+        ]);
+    }
 }

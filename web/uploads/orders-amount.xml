@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <Order ID="5" OrderAmount="1000" TotalOrderAmount="1200" CourierDeliveryPrice="200" PostDeliveryPrice="0" SelfDeliveryPrice="0"></Order>
+    <Order ID="6" OrderAmount="2000" TotalOrderAmount="2200" CourierDeliveryPrice="0" PostDeliveryPrice="200" SelfDeliveryPrice="0"></Order>
+    <Order ID="7" OrderAmount="3000" TotalOrderAmount="3200" CourierDeliveryPrice="0" PostDeliveryPrice="0" SelfDeliveryPrice="200"></Order>
+</root>

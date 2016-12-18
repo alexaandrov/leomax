@@ -1,0 +1,50 @@
+[
+    {
+        "orderid": 1,
+        "amount": 1000,
+        "discount": 100,
+        "totalamount": 960,
+        "delivery": {
+            "totalamount": 60,
+            "taxes": 10,
+            "fee": 20,
+            "amount": 30
+        }
+    },
+    {
+        "orderid": 2,
+        "amount": 2000,
+        "discount": 200,
+        "totalamount": 1950,
+        "delivery": {
+            "totalamount": 150,
+            "taxes": 50,
+            "fee": 50,
+            "amount": 50
+        }
+    },
+    {
+        "orderid": 3,
+        "amount": 3000,
+        "discount": 500,
+        "totalamount": 2620,
+        "delivery": {
+            "totalamount": 120,
+            "taxes": 60,
+            "fee": 50,
+            "amount": 10
+        }
+    },
+    {
+        "orderid": 4,
+        "amount": 4000,
+        "discount": 700,
+        "totalamount": 3510,
+        "delivery": {
+            "totalamount": 210,
+            "taxes": 50,
+            "fee": 70,
+            "amount": 90
+        }
+    }
+]

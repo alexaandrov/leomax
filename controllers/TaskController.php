@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\FileManager;
 use app\models\Task;
 use app\models\TmpOrderAmount;
 
@@ -14,8 +15,7 @@ class TaskController extends \yii\web\Controller
 
     public function action1()
     {
-        $model = new Task();
-        $data = $model->getJson('customers.json');
+        $data = FileManager::getData('customers', 'json');
         return $this->render('1', [
             'data' => $data
         ]);
@@ -23,10 +23,14 @@ class TaskController extends \yii\web\Controller
 
     public function action2()
     {
-        $data = TmpOrderAmount::find()
+        $sql = TmpOrderAmount::find()
             ->all();
+        $json = FileManager::getData('orders-amount', 'json');
+        $xml = FileManager::getData('orders-amount', 'xml');
         return $this->render('2', [
-            'data' => $data
+            'sql' => $sql,
+            'json' => $json,
+            'xml' => $xml
         ]);
     }
 }

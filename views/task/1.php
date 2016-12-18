@@ -20,10 +20,10 @@ $this->title = 'Task 1';
     <tbody>
     <?php foreach ($data as $object): ?>
         <tr>
-            <td><?= $object->id; ?></td>
-            <td><?= $object->name ?></td>
-            <td><?= $object->surname ?></td>
-            <td><?= $object->birthdate ?></td>
+            <td><?= $object['id']; ?></td>
+            <td><?= $object['name'] ?></td>
+            <td><?= $object['surname'] ?></td>
+            <td><?= $object['birthdate'] ?></td>
         </tr>
     <?php endforeach; ?>
     </tbody>

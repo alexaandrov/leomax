@@ -4,16 +4,30 @@ namespace app\models;
 class FileManager
 {
     /**
-     * Return file content
+     * Return mixed data from the file
      *
-     * @param string $fileName
-     * @return string
+     * @param string $name File name without type
+     * @param string $type Type of the file
+     * @return mixed Data
      */
-    static function getFile(string $fileName)
+    static function getData(string $name, string $type)
     {
-        if ($fileName) {
-            $file = file_get_contents('uploads/' . $fileName);
-            return $file;
+        $filePath = 'uploads/' . $name . '.' . $type;
+
+        if (file_exists($filePath)) {
+            switch ($type) {
+                case 'json':
+                    $buffer = file_get_contents($filePath);
+                    $data = json_decode($buffer, true);
+                    break;
+                case 'xml':
+                    $data = simplexml_load_file($filePath);
+                    break;
+                default:
+                    $data = '';
+                    break;
+            }
+            return $data;
         } else {
             return '';
         }
